@@ -2,13 +2,13 @@ import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyBchgy-rPzk0FgnMDc4ldPdiREztaeoTRo',
-  authDomain: 'fitness-tracker-a2a2b.firebaseapp.com',
-  projectId: 'fitness-tracker-a2a2b',
-  storageBucket: 'fitness-tracker-a2a2b.appspot.com',
-  messagingSenderId: '662062597103',
-  appId: '1:662062597103:web:5a2f8da78cf3eb2cc12c1a',
-  measurementId: 'G-XJFE1S0791',
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
