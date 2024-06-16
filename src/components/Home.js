@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useAuth } from '../AuthContext';
 import { useNavigate } from 'react-router-dom';
 import '../styles.css';
@@ -32,6 +32,14 @@ function Home() {
       console.error('Error during Google authentication:', error.message);
     }
   };
+
+  // get the background situated
+  useEffect(() => {
+    document.body.classList.add('home-background');
+    return () => {
+      document.body.classList.remove('home-background');
+    };
+  }, []);
 
   return (
     <div className='auth-container'>
