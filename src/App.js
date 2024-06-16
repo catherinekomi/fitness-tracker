@@ -5,7 +5,7 @@ import Profile from './components/Profile';
 import WorkoutLog from './components/WorkoutLog';
 import PrivateRoute from './PrivateRoute';
 import { AuthProvider } from './AuthContext';
-import './App.css';
+import './styles.css';
 
 function App() {
   return (

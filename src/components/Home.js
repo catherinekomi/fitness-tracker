@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { useAuth } from '../AuthContext';
 import { useNavigate } from 'react-router-dom';
+import '../styles.css';
 
 function Home() {
-  const { signup, login } = useAuth();
+  const { signup, login, loginWithGoogle } = useAuth();
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -23,9 +24,18 @@ function Home() {
     }
   };
 
+  const handleGoogleLogin = async () => {
+    try {
+      await loginWithGoogle();
+      navigate('/profile');
+    } catch (error) {
+      console.error('Error during Google authentication:', error.message);
+    }
+  };
+
   return (
-    <div>
-      <h1>{isSignup ? 'Sign Up' : 'Log In'}</h1>
+    <div className='auth-container'>
+      <h2>{isSignup ? 'Sign Up' : 'Log In'}</h2>
       <form onSubmit={handleSubmit}>
         <input
           type='email'
@@ -43,6 +53,14 @@ function Home() {
         />
         <button type='submit'>{isSignup ? 'Sign Up' : 'Log In'}</button>
       </form>
+      <button onClick={handleGoogleLogin} className='google-button'>
+        <img
+          src='https://developers.google.com/identity/images/g-logo.png'
+          alt='Google logo'
+          className='google-logo'
+        />
+        Sign in with Google
+      </button>
       <p>
         {isSignup ? (
           <>

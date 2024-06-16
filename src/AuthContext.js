@@ -4,7 +4,8 @@ import {
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signOut,
-  createUserWithEmailAndPassword,
+  GoogleAuthProvider,
+  signInWithPopup,
 } from 'firebase/auth';
 
 const AuthContext = createContext();
@@ -26,28 +27,26 @@ export function AuthProvider({ children }) {
     return unsubscribe;
   }, []);
 
-  const signup = (email, password) => {
-    return createUserWithEmailAndPassword(auth, email, password);
-  };
-
   const login = (email, password) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
 
-  const logout = async (navigate) => {
-    try {
-      await signOut(auth);
+  const logout = (navigate) => {
+    return signOut(auth).then(() => {
       navigate('/');
-    } catch (error) {
-      console.error('Error during logout:', error.message);
-    }
+    });
+  };
+
+  const loginWithGoogle = () => {
+    const provider = new GoogleAuthProvider();
+    return signInWithPopup(auth, provider);
   };
 
   const value = {
     currentUser,
-    signup,
     login,
     logout,
+    loginWithGoogle,
   };
 
   return (
