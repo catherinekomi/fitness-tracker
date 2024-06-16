@@ -1,15 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400&display=swap');
+
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Manrope', Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f8f9fa;
+  background-image: url('./assets/trail-home.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .App {
   text-align: center;
   padding: 20px;
 }
-
 
 .auth-container {
   max-width: 400px;
@@ -18,7 +25,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .auth-container h2 {
@@ -42,13 +49,17 @@ body {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #28a745;
+  background-color: #264311;
   color: #fff;
   cursor: pointer;
+  font-family: 'Manrope', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
 }
 
 .auth-container button:hover {
-  background-color: #218838;
+  background-color: #142800;
 }
 
 form {
@@ -78,15 +89,19 @@ textarea {
 
 button {
   padding: 10px 15px;
-  background-color: #007bff;
+  background-color: #264311;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-family: 'Manrope', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #142800;
 }
 
 .error {
@@ -120,6 +135,10 @@ li {
   margin-top: 10px;
   color: #333;
   width: 100%;
+  font-family: 'Manrope', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
 }
 
 .google-logo {
