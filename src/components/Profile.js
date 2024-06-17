@@ -52,7 +52,7 @@ const Profile = () => {
 
   return (
     <div className='content'>
-      <h1>Welcome, {currentUser.email}</h1>
+      <h1>Welcome, {profile.name || currentUser.email}</h1>
       <form onSubmit={handleSubmit}>
         <label>
           Upload your picture
