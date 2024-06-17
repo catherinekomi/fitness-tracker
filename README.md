@@ -3,7 +3,9 @@
 Plan:
 
 1. DONE. Implement User Authentication + Add Google Auth from Firebase.
-2. DONE. Add Header to every page for easy navigation
+   <img width="400" alt="fitness-tracker" src="https://github.com/catherinekomi/fitness-tracker/assets/64502672/03d5ee8d-ffb3-4905-a76e-9665877ba85d">
+
+3. DONE. Add Header to every page for easy navigation
    What Pages?
    - '/'
    - '/profile'
@@ -19,20 +21,26 @@ Plan:
      SHOW:
    - login
    - explore with Google Map(just the redirect for now)
-3. Add More Info to Profile Page ->
+   
+   <img width="400" alt="Screen Shot 2024-06-17 at 4 08 47 PM" src="https://github.com/catherinekomi/fitness-tracker/assets/64502672/f813995f-9e52-4e45-990f-67b9a3bb6f95">
+
+4. Add More Info to Profile Page ->
    ADD:
    Name, Height, Weight, City, State, Picture,
    Fav Hobbies
    - Upload a picture?
-4. Start building record workout page
-5. Create forms for logging workouts and meals
-6. Build components for displaying workout history and progress
-7. Set Up Google Maps API to showcase the route for the hike/run etc?
-8. Integrate Chart.js or D3.js for data visualization
-9. Add Socials
-10. Integrate from wearable devices, apple watch?
-11. maybe add notifications and reminders
-12. write documentation
+   - Do City and State on the same level
+<img width="400" alt="Screen Shot 2024-06-17 at 4 08 27 PM" src="https://github.com/catherinekomi/fitness-tracker/assets/64502672/026a409b-af2e-4a61-b6ee-52b52ebf4222">
+
+5. Start building record workout page
+6. Create forms for logging workouts and meals
+7. Build components for displaying workout history and progress
+8. Set Up Google Maps API to showcase the route for the hike/run etc?
+9. Integrate Chart.js or D3.js for data visualization
+10. Add Socials
+11. Integrate from wearable devices, apple watch?
+12. maybe add notifications and reminders
+13. write documentation
 
 PS
 Add logic where page does not exsists, 404 it
