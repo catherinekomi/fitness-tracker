@@ -42,56 +42,58 @@ function Home() {
   }, []);
 
   return (
-    <div className='auth-container'>
-      <h2>{isSignup ? 'Sign Up' : 'Log In'}</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type='email'
-          placeholder='Email'
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <input
-          type='password'
-          placeholder='Password'
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-        <button type='submit'>{isSignup ? 'Sign Up' : 'Log In'}</button>
-      </form>
-      <button onClick={handleGoogleLogin} className='google-button'>
-        <img
-          src='https://developers.google.com/identity/images/g-logo.png'
-          alt='Google logo'
-          className='google-logo'
-        />
-        Sign in with Google
-      </button>
-      <p>
-        {isSignup ? (
-          <>
-            Already have an account?{' '}
-            <span
-              style={{ color: 'blue', cursor: 'pointer' }}
-              onClick={() => setIsSignup(false)}
-            >
-              Log In
-            </span>
-          </>
-        ) : (
-          <>
-            Don't have an account?{' '}
-            <span
-              style={{ color: 'blue', cursor: 'pointer' }}
-              onClick={() => setIsSignup(true)}
-            >
-              Sign Up
-            </span>
-          </>
-        )}
-      </p>
+    <div className='content'>
+      <div className='auth-container'>
+        <h2>{isSignup ? 'Sign Up' : 'Log In'}</h2>
+        <form onSubmit={handleSubmit}>
+          <input
+            type='email'
+            placeholder='Email'
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <input
+            type='password'
+            placeholder='Password'
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+          <button type='submit'>{isSignup ? 'Sign Up' : 'Log In'}</button>
+        </form>
+        <button onClick={handleGoogleLogin} className='google-button'>
+          <img
+            src='https://developers.google.com/identity/images/g-logo.png'
+            alt='Google logo'
+            className='google-logo'
+          />
+          Sign in with Google
+        </button>
+        <p>
+          {isSignup ? (
+            <>
+              Already have an account?{' '}
+              <span
+                style={{ color: 'blue', cursor: 'pointer' }}
+                onClick={() => setIsSignup(false)}
+              >
+                Log In
+              </span>
+            </>
+          ) : (
+            <>
+              Don't have an account?{' '}
+              <span
+                style={{ color: 'blue', cursor: 'pointer' }}
+                onClick={() => setIsSignup(true)}
+              >
+                Sign Up
+              </span>
+            </>
+          )}
+        </p>
+      </div>
     </div>
   );
 }

@@ -31,7 +31,7 @@ function WorkoutLog() {
   };
 
   return (
-    <div>
+    <div className='content'>
       <h2>Workout Log</h2>
       <form onSubmit={handleSubmit}>
         <div>

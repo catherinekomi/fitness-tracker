@@ -5,6 +5,7 @@ import Profile from './components/Profile';
 import WorkoutLog from './components/WorkoutLog';
 import PrivateRoute from './PrivateRoute';
 import { AuthProvider } from './AuthContext';
+import Header from './components/Header/Header';
 import './styles.css';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <AuthProvider>
       <Router>
         <div className='App'>
+          <Header />
           <Routes>
             <Route path='/' element={<Home />} />
             <Route

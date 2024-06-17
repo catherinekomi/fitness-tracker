@@ -164,3 +164,7 @@ li {
 .auth-container p a:hover {
   text-decoration: underline;
 }
+
+.content {
+  padding-top: 70px;
+}
