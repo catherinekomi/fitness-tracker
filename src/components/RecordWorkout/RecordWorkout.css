@@ -1,0 +1,49 @@
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.workout-buttons button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #264311;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.workout-buttons button:hover {
+  background-color: #142800;
+}
+
+.workout-timer {
+  text-align: center;
+}
+
+.workout-timer button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #264311;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.workout-timer button:hover {
+  background-color: #142800;
+}
+
+.workout-log {
+  margin-top: 20px;
+}
+
+.workout-post {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
