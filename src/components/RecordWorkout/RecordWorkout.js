@@ -9,12 +9,10 @@ const RecordWorkout = () => {
 
   const [workoutType, setWorkoutType] = useState(null);
   const [isRecording, setIsRecording] = useState(false);
-  const [startTime, setStartTime] = useState(null);
   const [elapsedTime, setElapsedTime] = useState(0);
   const [timer, setTimer] = useState(null);
   const [showConfirmation, setShowConfirmation] = useState(false);
   const [workouts, setWorkouts] = useState([]);
-  const [completedWorkout, setCompletedWorkout] = useState(null);
 
   useEffect(() => {
     const fetchWorkouts = async () => {
@@ -40,7 +38,6 @@ const RecordWorkout = () => {
     setWorkoutType(type);
     setIsRecording(true);
     const start = Date.now();
-    setStartTime(start);
     setElapsedTime(0);
     setTimer(
       setInterval(() => {
@@ -80,7 +77,6 @@ const RecordWorkout = () => {
       const docRef = await addDoc(collection(db, 'workouts'), workoutData);
       console.log('Document written with ID: ', docRef.id);
       setWorkouts([workoutData, ...workouts]);
-      setCompletedWorkout(workoutData);
     } catch (e) {
       console.error('Error adding document: ', e);
     } finally {
