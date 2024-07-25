@@ -51,6 +51,7 @@ Plan:
 <img width="400" alt="Screen Shot 2024-07-25 at 1 12 43 PM" src="https://github.com/user-attachments/assets/1a886456-6d4e-4ed7-863a-4d495862a54f">
 5. Add ft. to height in the profile or add another window for cm
 6. Figure How to upload and store profile Picture
+7. Should I add a main page with API articles about sport? Olympics? Achievements?
 8. Set Up Google Maps API to showcase the route for the hike/run etc?
 9. Add 'Delete Workout' Button AND 'Rename Button' for every recorded workout
 10. Add location such as city to the workout?
