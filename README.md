@@ -32,9 +32,10 @@ Plan:
 
    - Upload a picture?
    - Do City and State on the same level
-     <img width="400" alt="Screen Shot 2024-06-17 at 4 08 27 PM" src="https://github.com/catherinekomi/fitness-tracker/assets/64502672/026a409b-af2e-4a61-b6ee-52b52ebf4222">
 
-4. Start building record workout page
+<img width="400" alt="Screen Shot 2024-06-17 at 4 08 27 PM" src="https://github.com/catherinekomi/fitness-tracker/assets/64502672/026a409b-af2e-4a61-b6ee-52b52ebf4222">
+
+4. Start building a record workout page
    Pick a workout(button with small logo): Run, Hike, Walk for now
    When you click on button it will start recording in 3..2..1
    Then it will show timer with:
@@ -42,9 +43,13 @@ Plan:
 - Pause
 - Start
 - Stop functionality
+- Then add permission to fetch and write Workout data
+- Show recent workouts first
+- Change the way it showing data
+- Build components for displaying workout history
+<img width="400" alt="Screen Shot 2024-07-25 at 1 12 43 PM" src="https://github.com/user-attachments/assets/1a886456-6d4e-4ed7-863a-4d495862a54f">
 
-6. Create forms for logging workouts and meals
-7. Build components for displaying workout history and progress
+6. Create forms for logging workouts
 8. Set Up Google Maps API to showcase the route for the hike/run etc?
 9. Integrate Chart.js or D3.js for data visualization
 10. Add Socials
