@@ -49,13 +49,14 @@ Plan:
 - Build components for displaying workout history
 <img width="400" alt="Screen Shot 2024-07-25 at 1 12 43 PM" src="https://github.com/user-attachments/assets/1a886456-6d4e-4ed7-863a-4d495862a54f">
 
-6. Create forms for logging workouts
 8. Set Up Google Maps API to showcase the route for the hike/run etc?
-9. Integrate Chart.js or D3.js for data visualization
-10. Add Socials
-11. Integrate from wearable devices, apple watch?
-12. maybe add notifications and reminders
-13. write documentation
+9. Add 'Delete Workout' Button AND 'Rename Button' for every recorded workout
+10. Add location such as city to the workout?
+11. Integrate Chart.js or D3.js for data visualization
+12. Add Socials
+13. Integrate from wearable devices, apple watch?
+14. maybe add notifications and reminders
+15. write documentation
 
 PS
 Add logic where page does not exsists, 404 it
