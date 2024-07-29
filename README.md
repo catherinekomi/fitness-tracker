@@ -3,10 +3,10 @@ https://main--activity-tracker-pro.netlify.app
 
 Plan:
 
-1. DONE. Implement User Authentication + Add Google Auth from Firebase.
+1. ✅ DONE. Implement User Authentication + Add Google Auth from Firebase.
    <img width="400" alt="fitness-tracker" src="https://github.com/catherinekomi/fitness-tracker/assets/64502672/03d5ee8d-ffb3-4905-a76e-9665877ba85d">
 
-2. DONE. Add Header to every page for easy navigation
+2. ✅ DONE. Add Header to every page for easy navigation
    What Pages?
 
    - '/'
@@ -41,12 +41,13 @@ Plan:
    When you click on button it will start recording in 3..2..1
    Then it will show timer with:
 
+- add sport type svg
 - Pause
 - Start
-- Stop functionality
-- Then add permission to fetch and write Workout data
-- Show recent workouts first
-- Change the way it showing data
+✅ - Stop functionality 
+✅ - Then add permission to fetch and write Workout data
+✅ - Show recent workouts first
+- Change the way it shows data
 - Build components for displaying workout history
 <img width="400" alt="Screen Shot 2024-07-25 at 1 12 43 PM" src="https://github.com/user-attachments/assets/1a886456-6d4e-4ed7-863a-4d495862a54f">
 5. Add ft. to height in the profile or add another window for cm
