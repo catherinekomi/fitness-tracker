@@ -1,5 +1,5 @@
 # Fitness Tracker
-https://main--activity-tracker-pro.netlify.app/profile
+https://main--activity-tracker-pro.netlify.app
 
 Plan:
 
