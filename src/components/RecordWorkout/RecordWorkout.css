@@ -18,6 +18,15 @@
   background-color: #142800;
 }
 
+.workout-buttons button img {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.workout-buttons button:hover {
+  background-color: #e0e0e0;
+}
+
 .workout-timer {
   text-align: center;
 }
