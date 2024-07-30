@@ -41,12 +41,12 @@ Plan:
 - add dummy user for showing’s
 - Upload a picture?
 - Update City and State on the same level on the page
-✅ - add sport type svg/png
-✅ - Pause
-✅ - Stop functionality 
-✅ - Then add permission to fetch and write Workout data
-✅ - Show recent workouts first
-✅ - Build components for displaying workout history (WorkoutLog.js)
+- ✅ add sport type svg/png
+- ✅ Pause
+- ✅ Stop functionality
+- ✅ Then add permission to fetch and write Workout data
+- ✅ Show recent workouts first
+- ✅ Build components for displaying workout history (WorkoutLog.js)
 <img width="400" alt="Screen Shot 2024-07-25 at 1 12 43 PM" src="https://github.com/user-attachments/assets/1a886456-6d4e-4ed7-863a-4d495862a54f">
 <img width="400" alt="Screen Shot 2024-07-29 at 7 12 36 PM" src="https://github.com/user-attachments/assets/884d8b83-cd1a-42a3-931c-b5221d1ffcaf">
 
